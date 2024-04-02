@@ -1,0 +1,29 @@
+body{
+    background-color: aquamarine;
+}
+.titulo{
+    
+    border-style: dashed;
+    width: 400px;
+    text-align: center;
+    
+    
+    
+    
+}
+.contene{
+    display: flex;
+    justify-content: space-between;
+}
+.hola{
+    border-style: dashed;
+    width: 400px;
+    text-align: center;
+}
+.guion{
+    border-style: dashed;
+    width: 40px;
+    text-align: center;
+    border-right: 1px;
+    border-left: 1px;
+}
