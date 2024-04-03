@@ -27,3 +27,26 @@ body{
     border-right: 1px;
     border-left: 1px;
 }
+
+.caja{
+    
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.uno{
+    
+    
+    border-color: aliceblue;
+    width: 400px;
+    
+}
+
+.dos{
+    border-style: dotted;
+    
+    border-color: black;
+    width: 600px;
+}
