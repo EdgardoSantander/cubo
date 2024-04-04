@@ -32,21 +32,44 @@ body{
     
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
 .uno{
     
+    margin-top: 100px;
     
     border-color: aliceblue;
-    width: 400px;
+    width: 600px;
+    display: inline-block;
+    justify-content: safe;
     
 }
 
 .dos{
+    content: "HOLA";
     border-style: dotted;
-    
+   
     border-color: black;
-    width: 600px;
+    width: 400px;
+    height: 600px;
+    
+    margin-top: 100px;
+    
+    background-color: blue;
+    
 }
+
+.unouno{
+    width: 350px;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+.dosdos{
+    width: 350px;
+    height: 300px;
+    background-color: bisque;
+}
+
