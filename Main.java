@@ -4,7 +4,7 @@ public class Main {
 
 
 
-        Mensaje nuevo = (nombre) -> { return nombre.toUpperCase();}; 
+        Mensaje nuevo = (nombre) -> {System.out.println("El nombre ingresado fue ... "+nombre); return nombre.toUpperCase();}; 
 
         
 
