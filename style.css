@@ -1,11 +1,14 @@
 body{
-    background-color: aquamarine;
+    background-color: black;
+    color: white;
+    
 }
 .titulo{
     
     border-style: dashed;
     width: 400px;
     text-align: center;
+    color: aqua;
     
     
     
@@ -13,12 +16,13 @@ body{
 }
 .contene{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .hola{
     border-style: dashed;
     width: 400px;
     text-align: center;
+    color: greenyellow;
 }
 .guion{
     border-style: dashed;
@@ -26,6 +30,8 @@ body{
     text-align: center;
     border-right: 1px;
     border-left: 1px;
+    color: red;
+    
 }
 
 .caja{
@@ -40,10 +46,13 @@ body{
     
     margin-top: 100px;
     
-    border-color: aliceblue;
-    width: 600px;
+    
+    
     display: inline-block;
     justify-content: safe;
+    border-color: blue;
+    border-width: 10px;
+    border-style: groove;
     
 }
 
@@ -65,11 +74,46 @@ body{
     width: 350px;
     height: 300px;
     background-color: aliceblue;
+    animation: cambio 2s  infinite;
+    
 }
 
 .dosdos{
     width: 350px;
     height: 300px;
     background-color: bisque;
+    border-inline-style: inherit;
 }
 
+@keyframes cambio {
+    0%{
+        background-color: aqua;
+        border-style: dashed;
+        transform: scale(1);
+    }
+    25%{
+        border-style: dotted;
+        width: 350px;
+        height: 300px;
+        background-color: brown;
+        transform: scale(0.7);
+    }
+    50%{
+        border-style: groove;
+        transform: scale(0.5);
+    }
+    75%{
+        border-style: dashed;
+        transform: scale(0.3);
+        
+    }
+    90%{
+        background-color: aqua;
+    }
+     100%{
+        background-color: brown;
+        border-style: dotted;
+        transform: scale(1);
+    }
+    
+}
