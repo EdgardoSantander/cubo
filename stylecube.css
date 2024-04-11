@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    
+    height: 97.9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+    background-color:black;
+
+    
+    border-style: groove; 
+    border-width: 10px;
+}
+
+
+
+
+.lado{
+    height: 300px;
+    width: 300px;
+    animation: girar 6s linear infinite;
+    position: absolute;
+    opacity: 0.9;
+    cursor: pointer;
+    background-color: red;
+    box-shadow: 0px 0px 42px 9px rgba(209,43,43,0.75);
+-webkit-box-shadow: 0px 0px 42px 9px rgba(209,43,43,0.75);
+-moz-box-shadow: 0px 0px 42px 9px rgba(209,43,43,0.75);
+}
+@keyframes girar {
+    from{
+        transform: rotateY(360deg) translateZ(150px);
+        z-index: 10;
+    }
+    50%{
+        z-index: -10;
+    }
+    to{
+        transform: rotateY(0) translateZ(150px);
+        z-index: 10;
+    }
+}
+
+#lado_d{
+    background-image: url(images/JoyBoy.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+#lado_c{
+    background-image: url(images/onizuka.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -1.5s;
+    
+}
+#lado_b{
+    background-image: url(images/kimetsu-no-yaiba-tanjiro-with-katana-desktop-wallpaper-preview.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -3s
+    
+}
+#lado_a{
+    background-image: url(images/gojo.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation-delay: -4.5s;
+    
+}
+
+/* top and bottom */
+
+
+.lado_2{
+    height: 300px;
+    width: 300px;
+    animation: girar_2 6s linear infinite;
+    position: absolute;
+    box-shadow: 0px 0px 42px 9px rgba(209,43,43,0.75);
+-webkit-box-shadow: 0px 0px 42px 9px rgba(209,43,43,0.75);
+-moz-box-shadow: 0px 0px 42px 9px rgba(209,43,43,0.75);
+}
+
+@keyframes girar_2{
+    from{
+        transform: rotateY(360deg) rotateX(90deg);
+    }
+    to{
+        transform: rotateY(0deg) rotateX(90deg);
+    }
+}
+
+#lado_e{
+    background-image: url(images/killua.jpg);
+    margin-bottom: 300px;
+}
+
+#lado_f{
+    background-image: url(images/Ippo.avif);
+    margin-top: 300px;
+}
